@@ -20,6 +20,6 @@ type Story = StoryObj<typeof Spinner>;
 
 export const Default: Story = {
   args: {
-    color: 'text-blue-300',
+    color: 'text-main-primaryHover',
   },
 };
