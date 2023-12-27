@@ -1,4 +1,4 @@
-import { Span } from '@/components/atoms';
+import { Span } from '@/components/common';
 
 export const physicalItems = [
   {
