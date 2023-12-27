@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint 'app/**/*.{js,jsx,ts,tsx}' --fix",
+    "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
