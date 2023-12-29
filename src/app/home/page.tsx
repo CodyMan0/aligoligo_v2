@@ -3,11 +3,10 @@ import { Nav } from '@/components/sections/nav';
 
 import StarBg from './startBg';
 
-export const test = {
-  name: 'juyoung',
-};
-
 const Home = () => {
+  const test = {
+    name: 'juyoung',
+  };
   return (
     <div className="relative">
       <Nav user={test} />

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import type { EmptyMapCard } from '../EmptyTargetCard/EmptyTargetCard';
+import type { EmptyTargetCard } from '../EmptyTargetCard/EmptyTargetCard';
 
 import { StartMapCard } from './StartMapCard';
 
-const meta: Meta<typeof EmptyMapCard> = {
+const meta: Meta<typeof EmptyTargetCard> = {
   title: 'features/home/mapCard/startMapCard',
   component: StartMapCard,
 };
