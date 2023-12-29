@@ -13,8 +13,8 @@
 5. storybook: v7.6.6
 
 ## deployment
-
-베포 url : https://www.aligoligo.me/target
+v1 url : https://www.aligoligo.me
+베포 url : https://aligoligo-v2.vercel.app/home
 
 with vercel.
 [팀 레포 무료 배포](https://velog.io/@rmaomina/organization-vercel-hobby-deploy)
