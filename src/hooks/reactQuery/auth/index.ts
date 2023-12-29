@@ -1,0 +1,2 @@
+
+// export { useGetUserData } from './useGetUserData';

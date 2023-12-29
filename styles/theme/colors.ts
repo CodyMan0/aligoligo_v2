@@ -34,6 +34,8 @@ export const colors = {
     primary : '#87995C',
     primaryHover : "#BACB91",
     primaryDark : "#52681D",
+    secondary: '#FFA030',
+    secondaryHover :'#FDBA74'
   },
   semanticTokens:{
     success: "#4785FF",

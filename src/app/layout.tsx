@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 import { META } from '@/constants/metadata';
+import Providers from '@/contexts/Providers';
 
 import './globals.css';
 
@@ -36,7 +37,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body>
-        <div className="layout">{children}</div>
+        <Providers>
+          <div className="layout">{children}</div>
+        </Providers>
       </body>
     </html>
   );

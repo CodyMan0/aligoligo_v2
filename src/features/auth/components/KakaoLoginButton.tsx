@@ -8,7 +8,7 @@ import { Button } from '@/components/common';
 export const KakaoLoginButton = () => {
   return (
     <Link href={'#'}>
-      <Button variant={'green'}>
+      <Button variant={'primary'}>
         <KakaoIcon width={24} alt="kakao-logo" />
         카카오톡 로그인
       </Button>
