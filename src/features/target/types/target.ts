@@ -25,5 +25,6 @@ interface SubGoalType extends TargetBasicType {
 }
 
 
-interface RoutineType extends TargetBasicType {}
+interface RoutineType extends TargetBasicType {
+}
 

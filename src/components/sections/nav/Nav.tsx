@@ -21,7 +21,7 @@ export const Nav = ({ user }: NavProps) => {
   console.log('test', user);
 
   return (
-    <div className="flex justify-between items-center w-full h-[44px] px-xs pt-xs">
+    <div className="flex justify-between items-center w-full h-[60px] px-xs py-xs">
       <div className="flex justify-center items-center w-10 390:w-8">
         <Image
           src={LogoImage}
@@ -36,11 +36,11 @@ export const Nav = ({ user }: NavProps) => {
       </div>
 
       {user ? (
-        <Typography type={'subLabel1'} className="text-white">
+        <Typography type={'subLabel1'} className="">
           {user.name}의 타겟 모음
         </Typography>
       ) : (
-        <Typography type={'subLabel1'} className="text-white">
+        <Typography type={'subLabel1'} className="">
           로고를 눌러 로그인을 해주세요
         </Typography>
       )}

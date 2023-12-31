@@ -8,7 +8,7 @@ const Home = () => {
     name: 'juyoung',
   };
   return (
-    <div className="relative">
+    <div className="relative w-full h-[100dvh] overflow-hidden">
       <Nav user={test} />
       <StarBg />
       <TargetLayout />
