@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { BottomSheet, Button } from '@/components/common';
 import { User } from '@/components/sections/nav/Nav';
 import { navItemswithLoggedIn, navItemswithLoggedOut } from '@/lib/constants/nav';
@@ -31,9 +33,11 @@ const NavBottomSheet = ({ open, onClose, user }: NavBottomSheetProps) => {
 const Content = ({ items }: NavItemsProps) => (
   <div className="p-xs flex flex-wrap gap-4">
     {items.map(({ name, id }) => (
-      <Button variant={'green'} key={id} className="p-2xs" height={'h60'}>
-        {name}
-      </Button>
+      <Link href={{ pathname: `/home` }} key={id}>
+        <Button variant={'green'} className="p-2xs" height={'h60'}>
+          {name}
+        </Button>
+      </Link>
     ))}
   </div>
 );

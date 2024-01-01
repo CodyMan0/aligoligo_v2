@@ -7,7 +7,7 @@ import { Button } from '@/components/common';
 
 export const GoogleLoginButton = () => {
   return (
-    <Link href={'#'}>
+    <Link href={'/home'}>
       <Button>
         <GoogleIcon width={24} alt="google-logo" />
         Google 로그인

@@ -2,13 +2,16 @@
 
 import { useRouter } from 'next/navigation';
 
+import { ChartWidget } from '@/components/chart';
+import { Modal } from '@/components/modal';
 import { Nav } from '@/components/sections/nav';
 
-import DetailLayout from './TargetDetailLayout';
 import ContentBody from './ContentBody';
+import DetailLayout from './TargetDetailLayout';
 
 const TargetDetailContent = ({ id }: { id: number }) => {
   const router = useRouter();
+
   console.log(id, router);
 
   const test = {
@@ -17,9 +20,9 @@ const TargetDetailContent = ({ id }: { id: number }) => {
   return (
     <DetailLayout
       header={<Nav user={test} />}
-      //   sticker={<Sticker />}
+      graph={<ChartWidget />}
       body={<ContentBody />}
-      //   footer={<DetailFooterButton />}
+      footer={<Modal buttonName="공유" />}
     />
   );
 };
