@@ -33,11 +33,11 @@ const NavBottomSheet = ({ open, onClose, user }: NavBottomSheetProps) => {
 const Content = ({ items }: NavItemsProps) => (
   <div className="p-xs flex flex-wrap gap-4">
     {items.map(({ name, id }) => (
-      <Link href={{ pathname: `/home` }} key={id}>
-        <Button variant={'green'} className="p-2xs" height={'h60'}>
+      <Button variant={'green'} className="p-2xs" height={'h60'} key={id}>
+        <Link href={{ pathname: `/home` }} className="w-full">
           {name}
-        </Button>
-      </Link>
+        </Link>
+      </Button>
     ))}
   </div>
 );

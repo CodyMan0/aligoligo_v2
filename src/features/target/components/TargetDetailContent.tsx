@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 
 import { ChartWidget } from '@/components/chart';
-import { Modal } from '@/components/modal';
+// import { Modal } from '@/components/modal';
 import { Nav } from '@/components/sections/nav';
 
 import ContentBody from './ContentBody';
@@ -22,7 +22,7 @@ const TargetDetailContent = ({ id }: { id: number }) => {
       header={<Nav user={test} />}
       graph={<ChartWidget />}
       body={<ContentBody />}
-      footer={<Modal buttonName="공유" />}
+      // footer={<Modal buttonName="공유" />}
     />
   );
 };

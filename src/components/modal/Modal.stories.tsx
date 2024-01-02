@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Modal } from './Modal';
+import { TargetShareContent } from './modalContents';
 
 const meta: Meta<typeof Modal> = {
   title: 'Components/Modal',
@@ -32,5 +33,13 @@ export const WithCheckbox: Story = {
 export const WithCopyCliboard: Story = {
   args: {
     buttonName: 'WithCopyCliboard',
+  },
+};
+
+export const TargetSharingModal: Story = {
+  args: {
+    title: '목표 공유',
+    buttonName: '목표 공유하기',
+    content: <TargetShareContent />,
   },
 };

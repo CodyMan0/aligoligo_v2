@@ -59,7 +59,7 @@ export const Checkbox = <T extends FieldValues>({
                 'focus-within:ring-4 focus-within:ring-main-secondaryHover': !isDisabled,
               })}
             >
-              <Typography type={'title2'} className="ml-2.5">
+              <Typography type={'title3'} className="ml-2.5">
                 {label}
               </Typography>
             </span>
