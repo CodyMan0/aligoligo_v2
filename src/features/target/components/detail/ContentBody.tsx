@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { Typography } from '@/components/common';
 import { Checkbox } from '@/components/common/checkbox';
 import { Modal } from '@/components/modal';
-import { ProgressBar } from '@/components/progress';
 import { TargetShareContent } from '@/components/modal/modalContents';
+import { ProgressBar } from '@/components/progress';
 
 const ContentBody = () => {
   const form = useForm();

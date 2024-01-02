@@ -1,5 +1,5 @@
-import UrlIcon from '@/assets/icons/urlIcon.svg';
 import KakaoSharingIcon from '@/assets/icons/kakao-sharing-icon.svg';
+import UrlIcon from '@/assets/icons/urlIcon.svg';
 import { Button } from '@/components/common';
 
 export const TargetShareContent = () => {

@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import AddIcon from '@/assets/icons/goal/add-icon.svg';
 import { Button } from '@/components/common';
 import { ContentWrapper } from '@/components/sections/contentWrapper';
@@ -54,9 +56,11 @@ export const TargetLayout = () => {
         </div>
       </ContentWrapper>
       <div className="absolute bottom-0 w-full flex flex-col px-xs py-[25px]">
-        <Button variant={'heavy'} className="">
-          <AddIcon />
-        </Button>
+        <Link href={{ pathname: '/target/create' }}>
+          <Button variant={'heavy'} className="">
+            <AddIcon />
+          </Button>
+        </Link>
       </div>
     </>
   );

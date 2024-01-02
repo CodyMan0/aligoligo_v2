@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 
-import TargetDetailContent from '@/features/target/components/TargetDetailContent';
+import TargetDetailContent from '@/features/target/components/detail/TargetDetailContent';
 
 interface ParamsProps {
   params: {
