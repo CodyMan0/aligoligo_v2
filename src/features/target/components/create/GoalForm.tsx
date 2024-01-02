@@ -9,6 +9,9 @@ import { Button, Span, Typography } from '@/components/common';
 import NavBottomSheet from '@/features/components/NavBottomSheet';
 import { TargetType } from '@/features/target/types';
 
+import { NEW_GOAL_FORM_ORDERS } from '../../constants';
+
+import FormHeader from './FormHeader';
 import FormLayout from './FormLayout';
 import { TextInput } from './TextInput';
 
@@ -23,7 +26,7 @@ const GoalForm = () => {
 
   return (
     <FormLayout
-      header={'df'}
+      header={<FormHeader formNumber={NEW_GOAL_FORM_ORDERS.goal} />}
       comment={
         <Typography type="title3" className="text-gray-50 font-insungit text-center">
           목표를 설정해보자
@@ -63,7 +66,7 @@ const GoalForm = () => {
         </div>
       }
       footer={
-        <Link href="/goal/new/date">
+        <Link href="/target/create/specific">
           <Button disabled={value ? value.length === 0 : true}>다음</Button>
         </Link>
       }
