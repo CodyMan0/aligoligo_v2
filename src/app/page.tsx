@@ -27,8 +27,8 @@ const SplashPage = () => {
         <Image src={LogoImage} width={320} height={160} alt="logo" priority />
       </div>
 
-      <div className="absolute top-80 390:w-[50%] 390:top-48 flex justify-center">
-        <Image src={SplashBandiboodi} width={240} alt="splash_bandiboodi" priority />
+      <div className="absolute top-60 390:w-[50%] 390:top-44 flex justify-center">
+        <Image src={SplashBandiboodi} width={220} alt="splash_bandiboodi" priority />
       </div>
       <div className="w-full h-[80vh] bg-gradient6 flex flex-col items-center">
         <div className="absolute bottom-[10px] w-full flex flex-col gap-3xs px-xs pb-[25px]">
