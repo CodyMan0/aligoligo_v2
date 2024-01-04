@@ -14,6 +14,7 @@ import { NEW_GOAL_FORM_ORDERS } from '../../constants';
 import FormHeader from './FormHeader';
 import FormLayout from './FormLayout';
 import { TextInput } from './TextInput';
+import GoalGuideBottomSheet from './GoalGuideBottomSheet';
 
 // import { NEW_GOAL_FORM_ORDERS } from '../../constants';
 
@@ -55,7 +56,7 @@ const GoalForm = () => {
                 rounded="xl"
                 onClick={() => {
                   overlay.open(({ isOpen, close }) => {
-                    return <NavBottomSheet open={isOpen} onClose={close} />;
+                    return <GoalGuideBottomSheet open={isOpen} onClose={close} setValue={setValue} />;
                   });
                 }}
               >

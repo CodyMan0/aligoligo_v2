@@ -20,11 +20,11 @@ export const SelectableCardList = ({ items, onClick }: SelectableCardListProps) 
     <div>
       {items.map((item, index) => (
         <button className="w-full group" onClick={() => handleCardClick(item.title)} key={`card${index + 1}`}>
-          <div className="p-4xs relative flex items-center justify-between rounded-md gap-4xs group-focus:bg-purple-10 group-hover:bg-purple-10 shadow-[0_0_7.9px_0_rgba(0,88,255,0.10)] mb-4xs">
+          <div className="p-4xs relative flex items-center justify-between rounded-md gap-4xs group-focus:bg-main-primary-10 group-hover:bg-main-primary-10 shadow-[0_0_7.9px_0_rgba(0,88,255,0.10)] mb-4xs">
             <Typography type="title3" className="text-gray-50">
               {item.content}
             </Typography>
-            <CheckIcon className="fill-gray-40 group-focus:fill-purple-40 group-hover:fill-purple-40" />
+            <CheckIcon className="fill-gray-40 group-focus:main-primary-80 group-hover:fill-main-primary-80" />
           </div>
         </button>
       ))}

@@ -21,7 +21,7 @@ export const Basic: Story = {
   decorators: [
     (Story) => (
       <OverlayProvider>
-        <div className="relative w-[390px] bg-main-primaryHover">
+        <div className="relative w-[390px] bg-main-primary-30">
           <Story />
           <div className="absolute top-[70px] left-[20px] text-sm text-gray-30">
             잘 보이기 위해 bg-gradient5 설정한 것이며, 실제로는 없습니다.
@@ -36,7 +36,7 @@ export const LoggedOut: Story = {
   decorators: [
     (Story) => (
       <OverlayProvider>
-        <div className="relative w-[390px] bg-main-primaryHover">
+        <div className="relative w-[390px] bg-main-primary-30">
           <Story />
           <div className="absolute top-[70px] left-[20px] text-sm text-gray-30">
             잘 보이기 위해 bg-gradient5 설정한 것이며, 실제로는 없습니다.

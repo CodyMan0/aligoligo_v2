@@ -21,7 +21,7 @@ const SplashPage = () => {
       </div> */}
       <StarBg />
       <div className="h-[38vh] flex flex-col gap-[1vh] z-10 justify-center">
-        <Typography type="heading2" className="text-center bg-clip-text bg-gradient4 text-main-primaryDark">
+        <Typography type="heading2" className="text-center bg-clip-text bg-gradient4 text-main-primary-80">
           목표 달성을 <br /> 알리고 올리고
         </Typography>
         <Image src={LogoImage} width={320} height={160} alt="logo" priority />

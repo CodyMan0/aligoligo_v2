@@ -31,9 +31,14 @@ export const colors = {
     10: '#E6F4FF',
   },
   main:{
-    primary : '#87995C',
-    primaryHover : "#BACB91",
-    primaryDark : "#52681D",
+    primary :{
+    80:'#52681D',
+    60: '#87995C',
+    30:'#BACB91',
+    10: '#DEEAC4'
+    } ,
+    // primaryHover : "#BACB91",
+    // primaryDark : "#52681D",
     secondary: '#FFA030',
     secondaryHover :'#FDBA74'
   },
