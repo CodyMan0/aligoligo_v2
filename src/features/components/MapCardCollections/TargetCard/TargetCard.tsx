@@ -10,7 +10,7 @@ import { ProgressBar } from '@/components/progress';
 
 import { MapCardLayout } from '../MapCardLayout';
 
-export const TargetCard = ({ isLinkEnabled = true }: { isLinkEnabled: boolean }) => {
+export const TargetCard = ({ isLinkEnabled = true }: { isLinkEnabled?: boolean }) => {
   // Todo temp number
   const id = 1;
 

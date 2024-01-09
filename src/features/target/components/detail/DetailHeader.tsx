@@ -1,10 +1,10 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { useOverlay } from '@toss/use-overlay';
 
 import BackIcon from '@/assets/icons/goal/back-icon.svg';
 import DeleteIcon from '@/assets/icons/goal/delete-icon.svg';
-import { useOverlay } from '@toss/use-overlay';
 import NavBottomSheet from '@/features/components/NavBottomSheet';
 
 const DetailHeader = () => {
