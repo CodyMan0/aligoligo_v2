@@ -4,19 +4,22 @@ import { useController, useFormContext } from 'react-hook-form';
 import Link from 'next/link';
 
 import { Button, Span, Typography } from '@/components/common';
-import { MAX_DATE_LENGTH_UNTIL_MONTH } from '@/constants';
 
+// import { MAX_DATE_LENGTH_UNTIL_MONTH } from '@/constants';
 import { NEW_GOAL_FORM_ORDERS } from '../../constants';
 import { TargetType } from '../../types';
 
-import { DateInput } from './DateInput';
+import DatePickerComponent from './datePicker/DatePickerComponent';
 import FormHeader from './FormHeader';
 import FormLayout from './FormLayout';
+
+import './datePicker/css/react-datepicker.css';
 
 export const DateForm = () => {
   const { register, getValues, control } = useFormContext<TargetType>();
   const { field } = useController({ name: 'startDate', control });
-  const { onChange } = field;
+  console.log(field);
+  // const { onChange } = field;
   const { goal } = getValues();
 
   return (
@@ -29,7 +32,8 @@ export const DateForm = () => {
       }
       body={
         <div {...register('startDate')} className="pt-lg">
-          <DateInput maxLength={MAX_DATE_LENGTH_UNTIL_MONTH} onChange={onChange} />
+          {/* <DateInput maxLength={MAX_DATE_LENGTH_UNTIL_MONTH} onChange={onChange} /> */}
+          <DatePickerComponent endDate="2024-02-10" />
         </div>
       }
       footer={

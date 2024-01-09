@@ -4,6 +4,7 @@
 import Link from 'next/link';
 
 import { Button, Span, Typography } from '@/components/common';
+import { TargetCard } from '@/features/components/MapCardCollections';
 
 // import { useGetStickers } from '@/hooks/reactQuery/sticker';
 import { NEW_GOAL_FORM_ORDERS } from '../../constants';
@@ -29,25 +30,14 @@ export const ConfirmForm = () => {
           <Span type="blue50">목표</Span>와 그에 따른 <Span type="blue50">하위 목표</Span>
           <br /> 그리고 <Span type="blue50">루틴</Span> 을 확인해줘~
           <br />
-          이대로 만들거야?! 가보자구
+          이대로 만들거야?!
+          <br />할 수 있어!
         </Typography>
       }
       body={
-        <div className="absolute h-[50%] inset-x-0 w-full pt-md">
-          <div className="absolute w-full h-full bg-white rounded-lg">
-            <div className="h-[calc(100%-90px)] my-2xs px-2xs overflow-auto">
-              {/* <div {...register('sticker')} className="grid grid-cols-3 gap-3xs"> */}
-              {/* {stickerData?.map(({ id, name, url }) => (
-                  <button key={id} className="flex flex-col items-center" onClick={() => handleClickSticker(id)}>
-                    <div className={`p-5xs rounded-lg ${selectedSticker === id && 'bg-blue-10'}`}>
-                      <Image src={url} alt={name} width={150} height={150} priority />
-                    </div>
-                  </button>
-                ))} */}
-              {/* </div> */}
-            </div>
-          </div>
-        </div>
+        <>
+          <TargetCard isLinkEnabled={false} />
+        </>
       }
       footer={
         <Link href="/home" className="z-[1]">

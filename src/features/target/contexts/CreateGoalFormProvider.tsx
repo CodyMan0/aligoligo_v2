@@ -9,7 +9,13 @@ import type { TargetType } from '../types';
 const CreateGoalFormProvider = ({ children }: PropsWithChildren) => {
   const isMounted = useIsMounted();
 
-  const methods = useForm<TargetType>();
+  const methods = useForm<TargetType>({
+    defaultValues: {
+      //UI에 표현하기 위해 defaultValue 지정
+      subGoal: [{}],
+      routine: [{}],
+    },
+  });
 
   const submit = (data: TargetType) => {
     // TODO: 불필요한 submit이 호출되는 문제 해결 필요

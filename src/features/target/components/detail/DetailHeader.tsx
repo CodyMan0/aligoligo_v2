@@ -1,13 +1,15 @@
 'use client';
 
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 import BackIcon from '@/assets/icons/goal/back-icon.svg';
-import CloseIcon from '@/assets/icons/goal/close-icon.svg';
+import DeleteIcon from '@/assets/icons/goal/delete-icon.svg';
+import { useOverlay } from '@toss/use-overlay';
+import NavBottomSheet from '@/features/components/NavBottomSheet';
 
 const DetailHeader = () => {
   const router = useRouter();
+  const overlay = useOverlay();
   const handleClickBackButton = () => {
     router.back();
   };
@@ -18,9 +20,21 @@ const DetailHeader = () => {
         <BackIcon />
       </button>
 
-      <Link href={{ pathname: '/home' }}>
-        <CloseIcon />
-      </Link>
+      {/* <Link href={{ pathname: '/home' }}>
+        <DeleteIcon />
+      </Link> */}
+      {/* {goalId && ( */}
+
+      <button
+        // disabled={!goalId}
+        onClick={() => {
+          overlay.open(({ isOpen, close }) => {
+            return <NavBottomSheet open={isOpen} onClose={close} />;
+          });
+        }}
+      >
+        <DeleteIcon />
+      </button>
     </div>
   );
 };

@@ -2,19 +2,13 @@
 
 import type { PropsWithChildren } from 'react';
 
-import SpeechBubble from '@/assets/images/bg-speech-bubble.svg';
-import Stars from '@/assets/images/bg-stars.svg';
-import CreateGoalFormProvider from '@/features/target/contexts/CreateGoalFormProvider';
+// import { TargetCard } from '@/features/components/MapCardCollections';
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
-    <CreateGoalFormProvider>
-      <div className="w-full h-screen bg-gradient5 relative">
-        <SpeechBubble className="absolute top-[-4%] w-full" />
-        <Stars className="absolute top-[28%] left-1/4 w-1/2" color="green" />
-        <div className="absolute top-0 left-0 w-full h-[calc(100dvh-24px)]">{children}</div>
-      </div>
-    </CreateGoalFormProvider>
+    <>
+      <div className="absolute top-0 left-0 w-full h-[calc(100dvh-24px)]">{children}</div>
+    </>
   );
 };
 
